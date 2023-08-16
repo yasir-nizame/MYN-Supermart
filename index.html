@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        MYN Supermarket
+    </title>
+    <!-- used to link external font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Fugaz+One&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet"> -->
+    <style>
+
+        body {
+            background: url('supermarket.jpg');
+            /* Image width was short so to set background image width i used bg/size propert */
+            background-size: 1350px 1350px;
+            background-repeat: no-repeat;
+            color: white;
+            font-family:'Roboto Slab', serif;
+        }
+
+        .left {
+            position: absolute;
+            /* border: 2px solid red; */
+            display: inline-block;
+            left: 20px;
+            top: 20px;
+            height: 100px;
+
+        }
+
+        .left img {
+            height: 75px;
+            width: 80px;
+
+        }
+
+        .left div {
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            height: 0px;
+            /* line-height: 19px; */
+            font-size: 20px;
+        }
+
+        .navbar {
+            /* border: 2px solid red; */
+            margin: 36px 240px;
+            width: 65%;
+            /* height: 40px; */
+            display: block;
+
+            padding: 0px;
+            border-radius: 30px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            /* display: inline-block; */
+            background-color: rgb(27 12 66);
+            /* border: 2px solid red; */
+            border-radius: 30px;
+            height: 35px;
+
+
+        }
+
+        .navbar li {
+            float: left;
+            margin: auto 13px;
+            padding: 8px 0px;
+
+        }
+
+        .navbar li a:hover, .navbar li a.active{
+            color:rgb(146, 18, 18);
+            background-color:antiquewhite;
+        }
+
+        .navbar li a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        #search {
+            text-align: center;
+            padding: 0px 0px;
+            margin: 8px 12px;
+            /* border: 2px solid red; */
+            border-radius: 30px;
+        }
+
+        .right {
+            margin-top: 18px;
+            position: absolute;
+            /* border: 2px solid red; */
+            display: inline-block;
+            right: 20px;
+            top: 20px;
+        }
+
+        .right button {
+            border: 2px solid black;
+            border-radius: 30px;
+            font-size: larger;
+            padding: 2px 4px;
+        }
+        .right button:hover{
+            color: antiquewhite;
+            background-color: rgb(27 12 66);
+        }
+
+        #intro {
+            /* border: 2px solid red; */
+            margin: 80px 0px;
+            padding: 8px 0px;
+            text-align: center;
+            background-color: #c5ad8c;
+            font-size: 60px;
+        }
+
+        .container {
+            /* border: 2px solid red; */
+            height: 800px;
+            width: 1000px;
+            margin: 0px 165px;
+            text-align: left;
+            font-weight: bolder;
+            color: red;
+
+
+        }
+
+        .container div {
+            /* border: 2px solid red; */
+        }
+
+        #container {
+            /* border: 2px solid red; */
+            margin: 40px auto;
+            padding: 0px 70px;
+            width: 60%;
+            height: 60px;
+            background-color: rgb(27 12 66);
+            color: aliceblue;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 50px;
+        }
+
+        .items {
+            /* border: 2px solid red; */
+            display: inline-block;
+            height: 250px;
+            width: 250px;
+            margin: 18px 25px;
+            padding: 18px 12px;
+            background-color: antiquewhite;
+            color: rgb(160, 12, 12);
+            opacity: 85%;
+            line-height: 22px;
+        }
+
+        .items span {
+            /* border: 2px solid red; */
+            margin: 0px 0px;
+            padding: 3px 48px;
+            /* width: 50%; */
+            text-align: center;
+            background-color:  rgb(27 12 66);
+            color: aliceblue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="cart.png" alt="loading image ">
+            <div>MYN</div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/project.html" target="_blank">Home<a></li>
+                <li><a href="#">About us<a></li>
+                <li><a href="#">Updates<a></li>
+                <li><a href="http://127.0.0.1:5500/homedeliv.html" target="_blank">Home Delivery<a></li>
+                <li><a href="#">Return and exchange policies<a></li>
+                <input type="text" id="search" placeholder="Search an item &#128270;">
+            </ul>
+        </div>
+        <div class="right">
+            <button>Call now</button>
+            <button>Email us </button>
+
+        </div>
+    </header>
+    <div id="intro">
+        Welcome To MYN Supermarket
+    </div>
+    <div class="container">
+        <div id="container">
+            Categories
+        </div>
+        <div class="items">
+            <span>Groceries</span>
+            <ul>
+                <li>Cleaning agents</li>
+                <li>Kitchen items</li>
+                <li>Bakery items</li>
+                <li>Utensils</li>
+            </ul>
+        </div>
+        <div class="items">
+            <span>Apparels</span>
+            <ul>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Kids</li>
+                <li>Infants</li>
+
+            </ul>
+
+        </div>
+        <div class="items">
+            <span>Poultry</span>
+            <ul>
+                <li>Meat</li>
+                <li>Eggs</li>
+                <li>Milk</li>
+                <li>Butter</li>
+            </ul>
+
+        </div>
+        <div class="items">
+            <span>Fruits and vegies</span>
+            <ul>
+                <li>Seasonal Fruits </li>
+                <li>Green vegies</li>
+                <li>Potattoes,Onions,Tomatoes</li>
+                <li>Dry fruits</li>
+            </ul>
+        </div>
+        <div class="items">
+            <span>Electronic  Appliances</span>
+            <ul>
+                <li>Microwaves</li>
+                <li>Refrigrators</li>
+                <li>Telivisons</li>
+                <li>Food factory</li>
+            </ul>
+        </div>
+        <div class="items">
+            <span>Home Decor</span>
+            <ul>
+                <li>Cutains</li>
+                <li>Mats</li>
+                <li>Lamps</li>
+                <li>Vases</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
